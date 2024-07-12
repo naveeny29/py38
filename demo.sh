@@ -1,5 +1,4 @@
 #!/bin/bash
-Set -e
 echo "You have passed $# Arguments"
 #This Scrip Will Get All The VPC ID Information From The Requested Region.
 if [ $# -gt 0 ]
