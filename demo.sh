@@ -2,6 +2,7 @@
 echo "You have passed $# Arguments"
 #This Scrip Will Get All The VPC ID Information From The Requested Region.
 if [ $# -gt 0 ]
+then
 aws ec2 describe-vpcs --region $1|jq ".Vpcs[].VpcId" -r
 echo "======================================================="
 aws ec2 describe-vpcs --region $2|jq ".Vpcs[].VpcId" -r
